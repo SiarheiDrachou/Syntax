@@ -57,6 +57,64 @@
                 </textarea>
             </p>
         </fieldset>
+
+    <br />
+
+        <fieldset>
+            <legend> Important data: </legend>
+            <p>
+                <label> Date of birth: </label>
+                <input 
+                    type="date" 
+                    required
+                />
+            </p>
+            <p>
+                <label> Desired salary: </label>
+                <input 
+                    type="number"
+                    placeholder="1000"
+                    step="100"
+                    min="100"
+                    max="2000"
+                    required
+                /> $$
+            </p>
+            <p>
+                <label> Position: </label>
+                <input
+                    type="radio" 
+                    name="option" 
+                    checked 
+                /> Frontend developer
+                <input 
+                    type="radio" 
+                    name="option" 
+                /> Backend developer
+                <input 
+                    type="radio" 
+                    name="option" 
+                /> UI Designer
+            </p>
+            <p>
+                <label> Benefits: </label>
+                <input type="checkbox" /> Snacks & Coffee
+                <input type="checkbox" /> Insurance
+                <input type="checkbox" /> 30-days vacation
+                <input type="checkbox" /> Open-minded manager
+                <input type="checkbox" /> Free English courses
+            </p>
+            <p>
+                <label> Current level: </label>
+                <select>
+                    <option 
+                        value="1" 
+                        selected > 
+                        Noobie 
+                    </option>
+                </select>
+            </p>
+        </fieldset>
     </form>
 </body>
 </html>
