@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>                   
+    <table border="3" cellpadding="20" cellspacing="30" bgcolor="white">  
+        <thead>
+             <th colspan="3"> арамзамзам </th>
+        </thead>  
+        <colgroup>
+            <col/>
+            <col style="background: lightblue" span="2" />
+            <col/>
+        </colgroup>
+        <tbody>
+            <tr style="background: blue">
+                <th> азаза </th>         
+                <th> азаза </th>
+                <th> азаза </th>
+            </tr> 
+            <tr>                         
+                <td > a </td>         
+                <td> aз </td>
+                <td rowspan="2"> aза </td>          
+            </tr>
+            <tr>
+                <td> a </td>             
+                <td> aз </td>
+            </tr>
+            <tr>
+                <td colspan="3"> a </td>           
+            </tr>
+        </tbody>
+        <tfoot></tfoot>
+    </table>
+    <form>
+    <p>
+        <p>
+            <label for="name"> Имя </label>
+            <input 
+                id="name"
+                type="text" 
+                placeholder="введите имя"
+                value=""
+            />
+        </p>
+        <p> 
+            <button type="submit"> Зарегистрироваться </button>
+        </p>
+        <p>
+            <button type="reset"> Сбросить значения </button> 
+        </p>
+        <p>
+            <input type="submit" />
+        </p>
+        <p>
+            <label for="email"> email </label>
+            <input id="email" placeholder="Введите email" multiple>
+        </p>
+        <p>
+            <input
+                type="password" 
+                placeholder="Введите пароль" 
+            />
+        </p>
+        <p>
+            <label for="number" > Возраст </label>
+            <input 
+                required
+                id="number"
+                type="number" 
+                placeholder=" Кол-во полных лет"
+                step="3"
+                min="10"
+                max="70"
+            />
+        </p>
+        <p>
+            <label for="slaider"> Возраст </label>
+            <input 
+                id="slaider"
+                type="range" 
+                step="1" 
+                min="1" 
+                max="99"
+            />
+        </p>
+        <p>
+            <label> Дата и время </label>
+            <input type="week" />
+            <input type="date" />
+            <input type="time" />
+            <input type="datetime-local" />
+        </p>
+        <p>
+            <input 
+                type="file" 
+                placeholder="Выберите до 3-х фото"
+                accept="image/png"
+                multiple
+            />
+        </p>
+        <p>
+            <label> Выберите цвет </label>
+            <input type="color" />
+        </p>
+    </p>
+    <p>
+        <textarea cols="50" rows="3"></textarea>
+    </p>
+    <p>
+        <input type="checkbox" /> Вариант 1
+        <input type="checkbox" checked /> Вариант 2
+        <input type="checkbox" /> Вариант 3
+        <input type="radio" name="option" /> Вариант 1
+        <input type="radio" name="option" checked /> Вариант 2
+        <input type="radio" name="option" /> Вариант 3
+    </p>
+    <p>
+        <select multiple size="5">
+            <optgroup label="цифры">
+                <option value="1"> 1 </option>
+                <option value="2">  2 </option>
+            </optgroup>
+            <option value="3" selected> 3 </option>
+            <option value="4" disabled> 4 </option>
+            <option value="5"> 5 </option>
+        </select>
+    </p>
+    </form>
+</body>
+</html>
