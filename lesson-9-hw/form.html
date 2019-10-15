@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Lesson 9 (Homework) - Form </h1>
+
+    <form autocomplete="off" pattern style="width: 800px">
+        <fieldset >
+            <legend> Credentials </legend>
+            <p>
+                <label for="First name"> First name: </label>
+                <input 
+                    id="First name"
+                    type="text" 
+                    placeholder="Enter your first name" 
+                    required
+                />
+            </p>
+            <p>
+                <label for="Last name"> Last name: </label>
+                <input 
+                    id="Last name"
+                    type="text" 
+                    placeholder="Enter your last name" 
+                    required
+                />
+            </p>
+            <p>
+                <label for="email"> Email: </label>
+                <input 
+                    id="email"
+                    type="email" 
+                    placeholder="example@mail.ru" 
+                />
+            </p>
+            <p>
+                <label for="password"> Password: </label>
+                <input 
+                    id="password"
+                    type="password" 
+                    placeholder="At least 6 symbols" 
+                    required
+                    minlength="6"
+                />
+            </p>
+            <p>
+                <label for="textarea"> Previous experience: </label>
+                <textarea 
+                    id="textarea" 
+                    cols="50" 
+                    rows="5">
+                </textarea>
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
