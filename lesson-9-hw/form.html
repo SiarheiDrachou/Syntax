@@ -4,27 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title> form </title>
 </head>
 <body>
     <h1> Lesson 9 (Homework) - Form </h1>
 
-    <form autocomplete="off" pattern style="width: 800px">
+    <form autocomplete="off" style="width: 800px">
         <fieldset >
             <legend> Credentials </legend>
             <p>
-                <label for="First name"> First name: </label>
+                <label for="First_name"> First name: </label>
                 <input 
-                    id="First name"
+                    id="First_name"
                     type="text" 
                     placeholder="Enter your first name" 
                     required
                 />
             </p>
             <p>
-                <label for="Last name"> Last name: </label>
+                <label for="Last_name"> Last name: </label>
                 <input 
-                    id="Last name"
+                    id="Last_name"
                     type="text" 
                     placeholder="Enter your last name" 
                     required
@@ -58,20 +58,22 @@
             </p>
         </fieldset>
 
-    <br />
+        <br />
 
         <fieldset>
             <legend> Important data: </legend>
             <p>
-                <label> Date of birth: </label>
+                <label for="birth"> Date of birth: </label>
                 <input 
+                    id="birth"
                     type="date" 
                     required
                 />
             </p>
             <p>
-                <label> Desired salary: </label>
+                <label for="salary"> Desired salary: </label>
                 <input 
+                    id="salary"
                     type="number"
                     placeholder="1000"
                     step="100"
@@ -105,30 +107,39 @@
                 <input type="checkbox" /> Free English courses
             </p>
             <p>
-                <label> Current level: </label>
-                <select>
-                    <option 
-                        value="1" 
-                        selected > 
-                        Noobie 
-                    </option>
+                <label for="level"> Current level: </label>
+                <select id="level">
+                    <option value="1" selected > Noobie </option>
+                    <option value="2"> Junior </option>
+                    <option value="3"> Middle </option>
+                    <option value="4"> Senior </option>
                 </select>
             </p>
         </fieldset>
 
-    <br>
+        <br>
 
         <fieldset>
             <legend> Other useful data: </legend>
             <p>
-                <label> Favourite color: </label>
-                <input type="color" value="#00ff00">
+                <label for="color"> Favourite color: </label>
+                <input 
+                    id="color" 
+                    type="color" 
+                    value="#00ff00"
+                />
             </p>
             <p>
-                <label> Your photo: </label>
-                <input type="file" placeholder="Choose file" accept="image/*">
+                <label for="file"> Your photo: </label>
+                <input 
+                    id="file" 
+                    type="file" 
+                    placeholder="Choose file" 
+                    accept="image/*"
+                />
             </p>
         </fieldset>
+
     <p>
         <button type="reset"> Reset </button>
         <button type="submit"> Submit </button>
