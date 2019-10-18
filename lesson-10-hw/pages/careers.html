@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> careers </title>
+</head>
+<body>
+    <header>
+        <img 
+            src="../images/site-logo.png" 
+            alt="Site logo" 
+            width="100"
+        />
+        <h1> Careers </h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html"> Home </a> 
+                </li>
+                <li>
+                    <a href="work.html"> Work </a> 
+                </li>
+                <li>
+                    <a href="company.html"> Company </a> 
+                </li>
+                <li>
+                    <a href="careers.html"> Careers </a> 
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <section>
+                <h2> What career you would like to start? </h2>
+                <form autocomplete="off"> 
+                    <p>
+                        <label for="name"> Your name: </label>
+                        <input 
+                            id="name"
+                            type="text" 
+                            placeholder="Name" 
+                            required
+                            minlength="2"
+                            maxlength="30"
+                        />
+                    </p>
+                    <p>
+                        <label for="email"> Your email: </label>
+                        <input 
+                            id="email"
+                            type="email" 
+                            placeholder="Email" 
+                            required
+                        />
+                    </p>
+                    <p>
+                        <label> Choose your career: </label>
+                        <input type="checkbox" /> Frontend
+                        <input type="checkbox" /> Backend
+                        <input type="checkbox" /> HTML coder
+                        <input type="checkbox" /> Designer
+                    </p>
+                    <p>
+                        <button type="submit"> Send </button>
+                    </p>
+                </form>
+            </section>
+        </article>
+    </main>
+</body>
+</html>
