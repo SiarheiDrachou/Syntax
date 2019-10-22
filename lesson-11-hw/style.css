@@ -1,0 +1,77 @@
+* {
+    color: #4a4a4a;
+}
+
+[href] {
+    color: #5555fd;
+}
+
+header ul  {
+    list-style-type: upper-roman ;
+}
+
+aside ul {
+    list-style-type: none ;
+}
+
+h1 {
+    font-size: 40px; 
+}
+
+h2 {
+    font-size: 28px; 
+}
+
+h3 {
+    font-size: 18px; 
+}
+
+.temperature {
+    font-size: 12px; 
+}
+
+section ~ p {
+    font-size: 14px; 
+}
+
+.red-text {
+    color: #e02424;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+#sports-header {
+    background-color: #c58a1d;
+    color: white;
+}
+
+#sports-header section ~ p {
+    background-color: #16d516;
+    color: white;
+}
+
+[title] {
+    font-style: italic;
+}
+
+[title="Sample"] {
+    color: #15c7ae;
+}
+
+a[href*="dev"] {
+    background-color: #d1d1d1;
+}
+
+a[href^="http://"] {
+    text-decoration: line-through;
+}
+
+img[src$=".jpg"] {
+    width: 110px;
+}
+
+img[src$=".png"] {
+    width: 110px;
+}
