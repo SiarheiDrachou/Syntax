@@ -47,7 +47,7 @@ section ~ p {
     color: white;
 }
 
-#sports-header section ~ p {
+#sports-header ~ section p {
     background-color: #16d516;
     color: white;
 }
