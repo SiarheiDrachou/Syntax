@@ -1,0 +1,114 @@
+@import url("aside.css");
+
+:root {
+    --pantone: rgba(255, 0, 0, 0.5);
+}
+
+html body {
+    width: 100%;
+}
+
+header {
+    width: 600px;
+    padding: 16px;
+    border: 2px dotted rgba(115, 60, 241, 0.6)
+}
+
+header nav {
+    width: 50%;
+    border: inherit;
+}
+
+header h1 {
+    font-size: 28px;
+    color: rgb(0, 0, 0) !important;
+}
+
+.navigation-list {
+    font-size: 18px;
+    color: hsl(220, 80%, 40%);
+    text-decoration: underline;
+    list-style-type: none;
+}
+
+main {
+    font-size: 18px;
+}
+
+main .items-list {
+    font-size: 0.75em;
+}
+
+main h3 {
+    font-size: 1.5em;
+}
+
+main section p {
+font-size: 0.9rem;
+}
+
+.semi-visible {
+    opacity: 0.5;
+}
+
+ .semi-visible + section {
+    background-color: var(--pantone);
+}
+
+#invisible {
+    opacity: 0;
+}
+
+.footer {
+    width: calc(100% - 400px);
+    height: 10vmax;
+    border: 2px dotted var(--pantone);
+}
+
+@media (min-width: 600px) and (max-width: 960px){
+    header nav {
+        width: 100%;
+    }
+
+    #aside {
+        width: 600px;
+        color: rgb(0, 0, 0);
+    }
+
+    .footer {
+        width: 90vw;
+        height: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        width: 100%;
+    }
+
+    header nav {
+        width: 100%;
+        border: none;
+    }
+
+    ul.navigation-list {
+        list-style-type: square;
+    }
+
+    #aside {
+        width: 50%;
+        border: none;
+    }
+
+    .footer {
+        width: 90vw;
+        height: auto;
+        border: none;
+    }
+
+    .semi-visible + section {
+        background: transparent;
+    }
+
+}
+
