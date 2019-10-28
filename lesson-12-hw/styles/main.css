@@ -4,14 +4,14 @@
     --pantone: rgba(255, 0, 0, 0.5);
 }
 
-html body {
+html, body {
     width: 100%;
 }
 
 header {
     width: 600px;
     padding: 16px;
-    border: 2px dotted rgba(115, 60, 241, 0.6)
+    border: 2px dotted rgba(115, 60, 241, 0.6);
 }
 
 header nav {
@@ -44,7 +44,7 @@ main h3 {
 }
 
 main section p {
-font-size: 0.9rem;
+    font-size: 0.9rem;
 }
 
 .semi-visible {
@@ -65,7 +65,7 @@ font-size: 0.9rem;
     border: 2px dotted var(--pantone);
 }
 
-@media (min-width: 600px) and (max-width: 960px){
+@media (min-width: 600px) and (max-width: 960px) {
     header nav {
         width: 100%;
     }
