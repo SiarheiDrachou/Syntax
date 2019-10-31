@@ -1,24 +1,44 @@
-@media (max-width: 834px) {
-    table {
-        width: 500px;
-    }
+tr td:nth-child(3) a:visited {
+    color: #FF736A;
+    font-weight: bold;
 }
 
-@media (min-width: 834px) and (max-width: 2000px) {
-    table {
-        width: 60%;
-    }
+tr td:first-child a:visited {
+    color: #AD00FF;
 }
 
-@media (min-width: 2000px) {
-    table {
-        width: 1200px;
-    }
+tr td:nth-child(2) a:visited {
+    color: #8700C7;
 }
 
-@font-face {
-    font-family: "Roboto";
-    src: url(../Roboto-Thin.ttf) format("truetype");
+tr td:first-child a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+tr td:first-child a:active {
+    color: #001AFF;
+    text-decoration: none;
+}
+
+tr td:nth-child(2) a:hover {
+    color: #17AAD9;
+    font-weight: bold;
+}
+
+tr td:nth-child(2) a:active {
+    color: #0015D0;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+tr td:nth-child(3) a:hover {
+    background: #C5EAFF;
+}
+
+tr td:nth-child(3) a:active {
+    background: #D1A4FF;
+    font-weight: bold;
 }
 
 p {
@@ -30,6 +50,9 @@ p:first-letter {
 }
 
 table {
+    min-width: 500px;
+    width: 60%;
+    max-width: 1200px;
     text-align: center;
     border-collapse: collapse;
 }
@@ -71,6 +94,10 @@ thead {
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
 }
 
+tr {
+    height: 40px;
+}
+
 tr:nth-child(-n + 2) {
     background: rgba(255, 192, 192, 0.5);
 }
@@ -91,54 +118,12 @@ tr:nth-last-child(-n + 2) {
     background: rgba(255, 238, 149, 0.6);
 }
 
-tfoot {
+tfoot tr:last-child{
     background: rgba(210, 250, 255, 0.6);
 }
 
 th:hover {
     text-decoration: underline;
     background: #6D95FA;
-}
-
-tr td:first-child a:first-child:hover {
-    font-weight: bold;
-    text-decoration: underline;
-}
-
-tr td:first-child a:first-child:active {
-    color: #001AFF;
-    text-decoration: none;
-}
-
-tr td:first-child a:first-child:visited {
-    color: #AD00FF;
-}
-
-tr td:nth-child(2) a:first-child:hover {
-    color: #17AAD9;
-    font-weight: bold;
-}
-
-tr td:nth-child(2) a:first-child:active {
-    color: #0015D0;
-    text-decoration: underline;
-    font-weight: bold;
-}
-
-tr td:nth-child(2) a:first-child:visited {
-    color: #8700C7;
-}
-
-tr td:nth-child(3) a:first-child:hover {
-    background: #C5EAFF;
-}
-
-tr td:nth-child(3) a:first-child:active {
-    background: #D1A4FF;
-    font-weight: bold;
-}
-
-tr td:nth-child(3) a:first-child:visited {
-    color: #FF736A;
-    font-weight: bold;
+    color: white;
 }
