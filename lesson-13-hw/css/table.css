@@ -1,0 +1,144 @@
+@media (max-width: 834px) {
+    table {
+        width: 500px;
+    }
+}
+
+@media (min-width: 834px) and (max-width: 2000px) {
+    table {
+        width: 60%;
+    }
+}
+
+@media (min-width: 2000px) {
+    table {
+        width: 1200px;
+    }
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../Roboto-Thin.ttf) format("truetype");
+}
+
+p {
+    font-weight: bold;
+}
+
+p:first-letter {
+    font-size: 32px;
+}
+
+table {
+    text-align: center;
+    border-collapse: collapse;
+}
+
+th:nth-child(2) {
+    border-right: 1px solid rgba(255, 255, 255, 0.4);
+    border-left: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+tr td:nth-child(2) {
+    border-right: 1px solid rgba(116, 116, 116, 0.2);
+    border-left: 1px solid rgba(116, 116, 116, 0.2);
+}
+
+tr:nth-child(2) {
+    border-top: 1px solid #FFFFFF;
+}
+
+tr:nth-child(5) {
+    border-top: 1px solid #FFFFFF;
+}
+
+tr:nth-child(8) {
+    border-top: 1px solid #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+body {
+    font-family: "Roboto";
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+thead {
+    background-color: #A3E9A4;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+}
+
+tr:nth-child(-n + 2) {
+    background: rgba(255, 192, 192, 0.5);
+}
+
+tr:nth-child(3n) {
+    background: white;
+}
+
+tr:nth-child(4) {
+    background: rgba(191, 191, 191, 0.2);
+}
+
+tr:nth-child(5) {
+    background: rgba(191, 191, 191, 0.2);
+}
+
+tr:nth-last-child(-n + 2) {
+    background: rgba(255, 238, 149, 0.6);
+}
+
+tfoot {
+    background: rgba(210, 250, 255, 0.6);
+}
+
+th:hover {
+    text-decoration: underline;
+    background: #6D95FA;
+}
+
+tr td:first-child a:first-child:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+tr td:first-child a:first-child:active {
+    color: #001AFF;
+    text-decoration: none;
+}
+
+tr td:first-child a:first-child:visited {
+    color: #AD00FF;
+}
+
+tr td:nth-child(2) a:first-child:hover {
+    color: #17AAD9;
+    font-weight: bold;
+}
+
+tr td:nth-child(2) a:first-child:active {
+    color: #0015D0;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+tr td:nth-child(2) a:first-child:visited {
+    color: #8700C7;
+}
+
+tr td:nth-child(3) a:first-child:hover {
+    background: #C5EAFF;
+}
+
+tr td:nth-child(3) a:first-child:active {
+    background: #D1A4FF;
+    font-weight: bold;
+}
+
+tr td:nth-child(3) a:first-child:visited {
+    color: #FF736A;
+    font-weight: bold;
+}
