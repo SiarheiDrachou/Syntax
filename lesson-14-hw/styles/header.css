@@ -5,27 +5,37 @@
 li {
     list-style:none;
     display: inline-block;
-    background-color: rgba(0, 0, 0, 0.87);
+    background-color: black;
     color: white;
     width: 25%;
-    height: 64px;
     font-family: 'Open Sans';
     margin-left: -4px;
-    padding: 24px;
 }
 
 ul {
     margin: 0;
     padding: 0;
     text-align: center;
+    height: 64px;
 }
 
-li:hover {
+a {
+    height: 64px;
+    color: #ffffff; 
+    font-size: 24px;
+    line-height: 100%;
+    text-decoration: none; 
+    display: block;
+    position: relative;
+    padding: 24px;
+}
+
+li a:hover {
     background-color: rgba(209, 209, 209, 0.8);
     color: black;
 }
 
-li:active {
+li a:active {
     background-color: rgba(248, 248, 248, 0.8);
     color: black;
     text-decoration: underline;
