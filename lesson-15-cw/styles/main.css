@@ -1,0 +1,64 @@
+:root {
+    --button-color: #26bab2;
+}
+
+* {
+    box-sizing:border-box;
+}
+
+html,body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+.flex-item {
+    font-size: 32px;
+    color: white;
+    margin: 8px;
+    top: 50%;
+    text-align: center;
+}
+
+.flex-item:nth-child(2n - 1) {
+    padding: 40px 50px;
+}
+
+.flex-item:first-child {
+    background-color: lightgreen;
+}
+
+.flex-item:nth-child(2) {
+    background-color: coral;
+    padding: 70px 80px;
+}
+
+.flex-item:nth-child(3) {
+    background-color: mediumorchid;
+}
+
+.flex-item:nth-child(4) {
+    background-color: cornflowerblue;
+    padding: 20px 30px;
+}
+
+.flex-item:last-child {
+    background-color: mediumslateblue;
+}
+
+.flex-container {
+    width: 600px;
+}
+
+.transitioned {
+    width: 250px;
+    height: 60px;
+    margin: 50px;
+    background-color: white;
+    border: 2px solid var(--button-color);
+    border-radius: 8px;
+    color: var(--button-color);
+    font-size: 24px;
+}
