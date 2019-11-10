@@ -37,10 +37,7 @@ html {
 .first-p {
     font-weight: 600;
     font-size: 24px;
-    margin-top: 16px;
-    margin-left: 16px;
-    margin-bottom: 4px;
-    margin-right: 18.17px;
+    margin: 16px 16px 4px 18.17px;
     line-height: 33px;
     overflow: hidden;
     white-space: nowrap;
@@ -49,10 +46,7 @@ html {
 
 .last-p {
     font-size: 12px;
-    margin-top: 4px;
-    margin-left: 17px;
-    margin-bottom: 16px;
-    margin-right: 18.17px;
+    margin: 4px 17px 16px 18.17px;
     color: rgba(0, 0, 0, 0.54);
     line-height: 16px;
     overflow: hidden;
@@ -78,7 +72,6 @@ html {
     color: white;
     font-size: 48px;
     opacity: 0;
-    top: 0;
 }
 
 .flex-main-item-2:hover span,
@@ -95,9 +88,7 @@ html {
 .flex-main-item-6:hover p:nth-child(2n) {
     transition-duration: 1s;
     transition-timing-function: ease-in;
-    margin-top: 17.6px;
-    margin-left: 17.6px;
-    margin-bottom: 4.4px;
+    margin: 17.6px 17.6px 4.4px 18.7px;
 }
 
 .flex-main-item-1:hover p:nth-child(2n - 1),
@@ -106,9 +97,7 @@ html {
 .flex-main-item-6:hover p:nth-child(2n - 1) {
     transition-duration: 1s;
     transition-timing-function: ease-in;
-    margin-top: 4.4px;
-    margin-left: 18.7px;
-    margin-bottom: 17.6px;
+    margin: 4.4px 18.7px 17.6px 17.6px;
 }
 
 .flex-main-item-1:hover,
@@ -141,11 +130,8 @@ html {
         grid-template-areas: "flex-main-item-1 . flex-main-item-3"
                              "flex-main-item-5 flex-main-item-5 flex-main-item-6"
                              "flex-main-item-4 flex-main-item-2 flex-main-item-2";
-        grid-gap: 95px 95px;                    
-        margin-top: 80px;
-        margin-bottom: 80px;
-        margin-left: 100px;
-        margin-right: 100px;
+        grid-gap: 95px 95px;   
+        margin: 80px 100px;                 
     }
 
     .flex-main-item-2 img{
@@ -205,10 +191,7 @@ html {
         grid-gap: 64px 65px;
         height: 1465px;
         width: 1024px;
-        margin-top: 80px;
-        margin-bottom: 80px;
-        margin-left: 130px;
-        margin-right: 130px;
+        margin: 80px 130px;
     }
 
     .flex-main-item-2 img,
@@ -258,10 +241,7 @@ html {
         grid-row-gap: 32px;
         width: 350px;
         height: 1870px;
-        margin-top: 32px;
-        margin-bottom: 32px;
-        margin-left: 32px;
-        margin-right: 32px;
+        margin: 32px;
     }
 
     .flex-main-item-1 {
