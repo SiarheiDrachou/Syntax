@@ -10,51 +10,71 @@
     <link rel="stylesheet" href="styles/footer.css">
     <title> Lesson 16 homework </title>
 </head>
-<body>
-    <header class="flex-container-header">
-        <nav>
-            <ul class="menu">
-                <li class="flex-item-1"> 
-                    <a href="#"> Home </a>
+<body class="body">
+    <header class="header__flex-container">
+        <nav class="header__navigation">
+            <ul class="header__menu">
+                <li class="header__flex-item-1"> 
+                    <a class="header__link" href="#"> Home </a>
                 </li>
-                <li class="flex-item-2"> 
-                    <a href="#"> About </a>                         
+                <li class="header__flex-item-2"> 
+                    <a class="header__link" href="#"> About </a>                         
                 </li> 
-                <li class="flex-item-3">
-                    <a href="#">
+                <li class="header__flex-item-3">
+                    <a class="header__link" href="#">
                         Menu
-                        <span></span> 
+                        <span class="header__triangle"></span> 
                     </a>
-                    <ul>
-                        <li> Option 1 </li>
-                        <li> Option 2 </li>
-                        <li> Option 3 </li>
+                    <ul class="header__drop-down-menu">
+                        <li class="header__drop-down-menu-item"> Option 1 </li>
+                        <li class="header__drop-down-menu-item"> Option 2 </li>
+                        <li class="header__drop-down-menu-item"> Option 3 </li>
                     </ul>
                 </li>
-                <li class="flex-item-4"> 
-                    <a href="#"> Contacts <span> &equiv; </span></a> 
+                <li class="header__flex-item-4"> 
+                    <a class="header__link" href="#"> Contacts </a> 
                 </li>                    
             </ul>
         </nav>
 
-        <h1> Top places to visit </h1>
+        <ul class="header__menu--small">
+            <li>
+                <div class="header__line--small header__line-1"></div>
+            </li>
+            <li>
+                <div class="header__line--small header__line-2"></div>
+            </li>
+            <li>
+                <div class="header__line--small header__line-3"></div>
+            </li>
+        </ul>
+
+        <h1 class="header__animation-text"> Top places to visit </h1>
     </header>
 
-    <main class="flex-container-main">
-        <div class="flex-main-item-1">
-            <img src="images/image1.png" alt="error image 1" />
-            <p class="first-p"> Card title </p>
-            <p class="last-p"> Secondary text </p>
+    <main class="main__flex-container">
+        <div class="main__flex-item main__item-1">
+            <img 
+                class="main__img--small" 
+                src="images/image1.png" 
+                alt="error image 1" 
+            />
+            <p class="main__first-p"> Card title </p>
+            <p class="main__last-p"> Secondary text </p>
         </div>
         
-        <div class="flex-main-item-2">
-            <span> Photo description </span>
-            <img src="images/image2.png" alt="error image 2" />
-            <p class="first-p"> 
+        <div class="main__flex-item-large main__item-2">
+            <span class="main__photo-description"> Photo description </span>
+            <img 
+                class="main__img-1--large main__img--large" 
+                src="images/image2.png" 
+                alt="error image 2" 
+            />
+            <p class="main__first-p"> 
                 Very long long long long long long long long long long long long
                 long long long long long long long long long long long long text  
             </p> 
-            <p class="last-p"> 
+            <p class="main__last-p"> 
                 Very long long long long long long long long long long long long
                 long long long long long long long long long long long secondary
                 long long long long long long long long long long long secondary
@@ -63,26 +83,38 @@
             </p>
         </div>
         
-        <div class="flex-main-item-3">
-            <img src="images/unnamed1.png" alt="error image 3" />
-            <p class="first-p"> Card title </p> 
-            <p class="last-p"> Secondary text </p>
+        <div class="main__flex-item main__item-3">
+            <img 
+                class="main__img--small" 
+                src="images/unnamed1.png" 
+                alt="error image 3" 
+            />
+            <p class="main__first-p"> Card title </p> 
+            <p class="main__last-p"> Secondary text </p>
         </div>
 
-        <div class="flex-main-item-4">
-            <img src="images/image4.png" alt="error image 4" />
-            <p class="first-p"> Card title </p> 
-            <p class="last-p"> Secondary text </p>
+        <div class="main__flex-item main__item-4">
+            <img 
+                class="main__img--small" 
+                src="images/image4.png" 
+                alt="error image 4" 
+            />
+            <p class="main__first-p"> Card title </p> 
+            <p class="main__last-p"> Secondary text </p>
         </div>
 
-        <div class="flex-main-item-5">
-            <span> Photo description </span>
-            <img src="images/image5.png" alt="error image 5" />
-            <p class="first-p"> 
+        <div class="main__flex-item-large main__item-5">
+            <span class="main__photo-description"> Photo description </span>
+            <img 
+                class="main__img-2--large main__large-img" 
+                src="images/image5.png" 
+                alt="error image 5" 
+            />
+            <p class="main__first-p"> 
                 Very long long long long long long long long long long long long
                 long long long long long long long long long long long long text  
             </p> 
-            <p class="last-p"> 
+            <p class="main__last-p"> 
                 Very long long long long long long long long long long long long
                 long long long long long long long long long long long secondary
                 long long long long long long long long long long long secondary
@@ -91,16 +123,20 @@
             </p>
         </div>
 
-        <div class="flex-main-item-6">
-            <img src="images/image6.png" alt="error image 6" />
-            <p class="first-p"> Card title </p> 
-            <p class="last-p"> Secondary text </p>
+        <div class="main__flex-item main__item-6">
+            <img 
+                class="main__img--small" 
+                src="images/image6.png" 
+                alt="error image 6" 
+            />
+            <p class="main__first-p"> Card title </p> 
+            <p class="main__last-p"> Secondary text </p>
         </div>
     </main>
 
-    <footer class="flex-container-footer">
-        <address> Created by John Doe </address>
-        <p> 2019 &copy; All rights reserved </p>
+    <footer class="footer__flex-container">
+        <address class="footer__address"> Created by John Doe </address>
+        <p class="footer__p"> 2019 &copy; All rights reserved </p>
     </footer>
 </body>
 </html>
