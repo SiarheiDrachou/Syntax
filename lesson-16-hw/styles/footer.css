@@ -1,4 +1,4 @@
-.flex-container-footer {
+.footer__flex-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -11,14 +11,14 @@
 
 }
 
-.flex-container-footer p {
+.footer__p {
     line-height: 22px;
     margin-right: 24px;
     margin-top: 15px;
     margin-bottom: 16px;
 }
 
-address {
+.footer__address {
     width: 148px;
     height: 22px;
     line-height: 22px;
@@ -28,7 +28,7 @@ address {
 }
 
 @media (max-width: 768px) {
-    .flex-container-footer {
+    .footer__flex-container {
         height: 48px;
         font-size: 12px;
     }
