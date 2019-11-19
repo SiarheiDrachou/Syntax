@@ -1,0 +1,248 @@
+.footer {
+    width: 100%;
+    font-size: 14px;
+    color: white;
+    padding: 0;
+    margin: 0;
+    
+    .footer__upper-section {
+        display: grid;
+        grid-template-columns: repeat(3, 370px);
+        grid-template-rows: 500px;
+        grid-template-areas: "footer__section-1 footer__section-2 footer__section-3";
+        grid-gap: 30px;
+        justify-content: center;
+        height: 500px;
+        background-color: #171717;
+        padding: 0;
+        margin: 0;
+
+        .footer__section-1 {
+            grid-area: footer__section-1;
+            margin-top: 65px;
+            
+            .footer__text--border-blue {
+                width: 39px;
+                height: 23px;
+                background-color: #4A90E2;
+                border-radius: 3px;
+            }
+
+            .footer__text {
+                width: 270px;
+                height: 66px;
+                margin-top: 30px;
+                margin-bottom: 64px;
+            }
+
+            .footer__section-1--header {
+                font-weight: bold;
+                font-size: 20px;
+                margin-top: 0;
+                margin-bottom: 23px;
+            }
+
+            .footer__social-network {
+                display: flex;
+                height: 34px;
+                width: 230px;
+
+                .footer__img-social-network {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: 15px;
+                    height: 34px;
+                    width: 34px;
+                    background-color: #343434;
+                    border: none;
+                    flex-wrap: nowrap;
+
+                    .footer__img-social-network--plus {
+                        margin-left: 2px;
+                    }
+                }
+            }
+        }    
+    }
+
+    .footer__section-2 {
+        grid-area: footer__section-2;
+        margin-top: 62px;
+
+        .footer__section-2--header {
+            margin: 0;
+            margin-bottom: 28px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .footer__section-2--img-1,
+        .footer__section-2--img-2,
+        .footer__section-2--img-3 {
+            position: relative;
+            border-radius: 3px;
+            margin-bottom: 25px;
+
+            .footer__text--bold {
+                position: absolute;
+                font-weight: bold;
+                font-size: 15px;
+                left: 115px;
+                top: 6px;
+                width: 178px;
+                height: 49px;
+            }
+
+            .footer__text--italic {
+                position: absolute;
+                font-style: italic;
+                left: 115px;
+                top: 68px;
+            }
+        }
+
+    }
+    
+    .footer__section-3 {
+        grid-area: footer__section-3;
+        
+        .footer__section-3--header {
+            color: white;
+            margin-top: 62px;
+            margin-bottom: 38px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .footer__input--name,
+        .footer__input--email {
+            height: 50px;
+            width: 270px;
+            background-color: #373737;
+            border-radius: 3px;
+            color: #AEB3BB;
+            padding-left: 15px;
+            margin-bottom: 10px;
+        }
+
+        .footer__button {
+            height: 50px;
+            width: 270px;
+            background-color: #232323;
+            border-radius: 3px;
+            font-weight: bold;
+            color: white;
+        }
+    }
+
+    .footer__list {
+        display: grid;
+        grid-template-columns: repeat(3, 370px);
+        grid-template-rows: 94px;
+        grid-template-areas: "footer__list-item-1 . footer__list-item-2";                    
+        grid-gap: 30px;
+        list-style-type: none;
+        height: 94px;
+        background-color: #000000;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+
+        .footer__list-item-1 {
+            display: flex;
+            align-items: center;
+            grid-area: footer__list-item-1;
+        }
+        
+        .footer__list-item-2 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            grid-area: footer__list-item-2;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1280px) {
+    .footer {
+
+        .footer__upper-section {
+            display: grid;
+            grid-template-columns: 270px 293px;
+            grid-template-rows: 451px 234px;
+            grid-template-areas: "footer__section-1 footer__section-2"
+                                "footer__section-3 footer__section-3";
+            grid-gap: 48px 41px;
+            height: 787px;
+
+                .footer__section-3--header {
+                    margin-top: 0;
+                    color: white;
+                }
+
+                .footer__input--name,
+                .footer__input--email {
+                    width: 585px;
+                }
+        
+                .footer__button {
+                    width: 585px;
+                }
+            }
+
+        .footer__list {
+            display: grid;
+            grid-template-columns: 270px 293px;
+            grid-template-rows: 94px;
+            grid-template-areas: "footer__list-item-1 footer__list-item-2";
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+
+        .footer__upper-section {
+            display: grid;
+            grid-template-columns: 293px;
+            grid-template-rows: 248px 389px 234px;
+            grid-template-areas: "footer__section-1"
+                                 "footer__section-2"
+                                 "footer__section-3";
+            grid-gap: 48px 41px;
+            height: 1063px;
+
+                .footer__section-3--header {
+                    margin-top: 0;
+                    color: white;
+                }
+
+                .footer__input--name,
+                .footer__input--email {
+                    width: 293px;
+                }
+        
+                .footer__button {
+                    width: 293px;
+                }
+            }
+
+        .footer__list {
+            display: grid;
+            grid-template-columns: 309px;
+            grid-template-rows: repeat(2, 18px);
+            grid-template-areas: "footer__list-item-2"
+                                 "footer__list-item-1";
+            
+            .footer__list-item-1 {
+                justify-content: center;
+            }
+
+            .footer__list-item-2 {
+                margin-top: 24px;
+                margin-bottom: 24px;
+            }
+        }
+    }
+}
