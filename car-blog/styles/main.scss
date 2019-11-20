@@ -1,7 +1,7 @@
 .main {
     display: grid;
     grid-template-columns: repeat(3, 370px);
-    grid-template-rows: repeat(2, 265px) repeat(10, 280px) 288px;
+    grid-template-rows: repeat(2, 265px) repeat(10, 289px) 146px;
     grid-template-areas: "img-1 img-2 img-3"
                          "img-1 img-4 img-5"
                          "main__article main__article main__aside"
@@ -109,12 +109,11 @@
         flex-direction: column;
         justify-content: space-between;
         grid-area: main__article;
-        height: 3053px;
+        height: 2978px;
         margin-top: 50px;
 
         .main__section-img--large {
             position: relative;
-            align-self: start;
 
             .main__section--text-container {
                 position: absolute;
@@ -122,7 +121,7 @@
                 box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
                 border-radius: 5px;
                 width: 726px;
-                height: 249px; 
+                height: 262px; 
                 top: 311px;
                 left: 20px;
             }
@@ -179,7 +178,8 @@
         display: flex;
         flex-wrap: nowrap;
         justify-content: center;
-        align-items: flex-end;
+        align-items: flex-start;
+        margin-top: 38px;
         margin-bottom: 68px;
 
         .main__page--border-gray {
@@ -238,11 +238,12 @@
             font-size: 18px;
             color: #171717;
             margin-top: 0;
+            margin-bottom: 23px;
         }
 
         .main__aside-posts {
-            height: 1313px;
             margin-bottom: 59px;
+            height: 1345px;
             
             .main__aside-img {
                 position: relative;
@@ -292,6 +293,7 @@
     
         .main__aside-instagram {
             width: 270px;
+            height: 498px;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
@@ -303,7 +305,6 @@
                 font-size: 18px;
                 margin: 0;
                 margin-bottom: 25px;
-
             }
 
             .instagram-button {
@@ -317,6 +318,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                border: none;
             }
 
             .main__instagram-icon {
@@ -326,6 +328,7 @@
 
         .main__aside-tags {
             width: 267px;
+            height: 309px;
             margin-bottom: 60px;
 
             .main__tags-header {
@@ -340,19 +343,216 @@
             .tags-block {
                 display: flex;
                 flex-wrap: wrap;
+                height: 277px;
+                width: 269px;
 
-                .main__tags-text {
-                    padding: 7px 16px 5px 16px;
+                .main__tags-text--Business {
+                    background-color: #EBEBEB;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 3px;
+                    height: 30px;
+                    width: 84px;
                     margin: 0 7px 10px 0;
                     font-size: 14px;
+                }
+
+                .main__tags-text--Freelance {
                     background-color: #EBEBEB;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     border-radius: 3px;
+                    height: 30px;
+                    width: 91px;
+                    margin: 0 7px 10px 0;
+                    font-size: 14px;
+                }
+
+                .main__tags-text--Money {
+                    background-color: #EBEBEB;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 3px;
+                    height: 30px;
+                    width: 72px;
+                    margin: 0 7px 10px 0;
+                    font-size: 14px;
+                }
+
+                .main__tags-text--Experience {
+                    background-color: #EBEBEB;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 3px;
+                    height: 30px;
+                    width: 100px;
+                    margin: 0 7px 10px 0;
+                    font-size: 14px;
+                }
+
+                .main__tags-text--Lifestyle {
+                    background-color: #EBEBEB;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 3px;
+                    height: 30px;
+                    width: 82px;
+                    margin: 0 7px 10px 0;
+                    font-size: 14px;
+                }
+
+                .main__tags-text--SEO  {
+                    background-color: #EBEBEB;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 3px;
+                    height: 30px;
+                    width: 58px;
+                    margin: 0 7px 10px 0;
+                    font-size: 14px;
+                }
+
+                .main__tags-text--Wordpress {
+                    background-color: #EBEBEB;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 3px;
+                    height: 30px;
+                    width: 98px;
+                    margin: 0 7px 10px 0;
+                    font-size: 14px;
+                }
+
+                .main__tags-text--Marketing {
+                    background-color: #EBEBEB;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 3px;
+                    height: 30px;
+                    width: 93px;
+                    margin: 0 7px 10px 0;
+                    font-size: 14px;
+                }
+
+                .main__tags-text--UX {
+                    background-color: #EBEBEB;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 3px;
+                    height: 30px;
+                    width: 49px;
+                    margin: 0 7px 10px 0;
+                    font-size: 14px;
+                }
+
+                .main__tags-text--Modern {
+                    background-color: #EBEBEB;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 3px;
+                    height: 30px;
+                    width: 79px;
+                    margin: 0 7px 10px 0;
+                    font-size: 14px;
+                }
+
+                .main__tags-text--Success {
+                    background-color: #EBEBEB;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 3px;
+                    height: 30px;
+                    width: 79px;
+                    margin: 0 7px 10px 0;
+                    font-size: 14px;
+                }
+
+                .main__tags-text--Nature {
+                    background-color: #EBEBEB;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 3px;
+                    height: 30px;
+                    width: 72px;
+                    margin: 0 7px 10px 0;
+                    font-size: 14px;
+                }
+
+                .main__tags-text--Productivity {
+                    background-color: #EBEBEB;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 3px;
+                    height: 30px;
+                    width: 104px;
+                    margin: 0 7px 10px 0;
+                    font-size: 14px;
+                }
+
+                .main__tags-text--Sales-page {
+                    background-color: #EBEBEB;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 3px;
+                    height: 30px;
+                    width: 97px;
+                    margin: 0 7px 10px 0;
+                    font-size: 14px;
+                }
+
+                .main__tags-text--Sell {
+                    background-color: #EBEBEB;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 3px;
+                    height: 30px;
+                    width: 53px;
+                    margin: 0 7px 10px 0;
+                    font-size: 14px;
+                }
+
+                .main__tags-text--Teamwork {
+                    background-color: #EBEBEB;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 3px;
+                    height: 30px;
+                    width: 95px;
+                    margin: 0 7px 10px 0;
+                    font-size: 14px;
+                }
+
+                .main__tags-text--Monetize {
+                    background-color: #EBEBEB;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 3px;
+                    height: 30px;
+                    width: 88px;
+                    margin: 0 7px 10px 0;
+                    font-size: 14px;
                 }
             }
         }
 
         .main__aside-email {
-            height: 279px;
             width: 270px;
 
             .main__email-header {
@@ -368,6 +568,7 @@
                 height: 48px;
                 color: #666666;
                 font-size: 14px;
+                margin-bottom: 27px;
             }
 
             .email-input {
@@ -387,6 +588,7 @@
                 border-radius: 3px;
                 color: white;
                 font-size: 14px;
+                border: none;
             }
         }
     }
@@ -436,7 +638,7 @@
     .main {
         display: grid;
         grid-template-columns: repeat(2, 370px);
-        grid-template-rows: repeat(3, 265px) repeat(10, 285px) repeat(6, 280px);
+        grid-template-rows: repeat(3, 265px) repeat(10, 294px) 128px repeat(5, 241px) 309px;
         grid-template-areas: "img-1 img-2"
                              "img-1 img-4"
                              "img-3 img-5"
@@ -450,6 +652,7 @@
                              "main__article main__article"
                              "main__article main__article"
                              "main__article main__article"
+                             "main__page main__page"
                              "main__aside main__aside"
                              "main__aside main__aside"
                              "main__aside main__aside"
@@ -458,45 +661,42 @@
                              "main__aside main__aside";
         grid-gap: 24px 24px;
 
-        .main__section-img--big {
-    
-            .img--big {
-                height: 554px;
-            }
-    
-            .main__big-text--border-blue {
-            }
-    
-            .main__big-text--bold {
-            }
-    
-            .main__big-text {
-            }
+        .main__page {
+            height: 40px;
+            margin-top: 44px;
         }
 
         .main__aside {
-            width: 604px;
+            display: flex;
             height: 1568px;
             justify-content: space-between;
+            margin-top: 0;
     
             .main__aside-posts {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-between;
                 height: 684px;
+                width: 604px;
+                margin-left: 81px;
 
-                .main__aside-header{
+                .main__aside-header {
                     width: 100%;
                 }
             }
     
+            .main__aside-instagram {
+                margin-left: 81px;
+            }
+
             .main__aside-tags {
                 width: 267px;
                 margin-bottom: 60px;
+                margin-right: 81px;
             }
     
             .main__aside-email {
-                width: 376px;
+                margin-left: 81px;
 
                 .main__email-text {
                     width: 376px;
@@ -512,23 +712,23 @@
     .main {
         display: grid;
         grid-template-columns: 370px;
-        grid-template-rows: repeat(6, 265px) repeat(10, 318px) 116px repeat(9, 265px);
+        grid-template-rows: repeat(6, 265px) repeat(10, 320px) 112px repeat(8, 265px) 346px;
         grid-template-areas: "img-1"
                              "img-1"
                              "img-2"
                              "img-4"
                              "img-3"
                              "img-5"
-                             "img-6"
-                             "img-6"
-                             "img-7"
-                             "img-7"
-                             "img-8"
-                             "img-8"
-                             "img-9"
-                             "img-9"
-                             "img-10"
-                             "img-10"
+                             "main__article"
+                             "main__article"
+                             "main__article"
+                             "main__article"
+                             "main__article"
+                             "main__article"
+                             "main__article"
+                             "main__article"
+                             "main__article"
+                             "main__article"
                              "main__page"
                              "main__aside"
                              "main__aside"
@@ -581,52 +781,69 @@
             }
         }
 
-        .main__section-img--large {
-            width: 370px;
-            height: 635px;
-            
-            .main__img--large {
+        .main__article {
+            height: 3367px;
+
+            .main__section-img--large {
                 width: 370px;
-                height: 404px; 
-            }
-
-            .main__section--text-container {
-                left: 10px;
-                width: 350px;
-                height: 324px; 
-        
-                .main__large-text--bold {
-                    left: 15px;
-                    top: 71px;
-                    height: 56px;
-                    width: 290px;
-                    font-size: 20px;
+                height: 635px;
+                
+                .main__img--large {
+                    width: 370px;
+                    height: 404px; 
                 }
 
-                .main__large-text--border-blue {
-                    left: 15px;
-                    top: 29px;
-                }
-        
-                .main__large-text {
-                    left: 15px;
-                    top: 174px;
-                    height: 120px;
-                    width: 295px;
-                }
-        
-                .main__large-text--italic {
-                    left: 15px;
-                    top: 142px;
+                .main__section--text-container {
+                    left: 10px;
+                    width: 350px;
+                    height: 324px; 
+            
+                    .main__large-text--bold {
+                        left: 15px;
+                        top: 71px;
+                        height: 56px;
+                        width: 290px;
+                        font-size: 20px;
+                    }
+
+                    .main__large-text--border-blue {
+                        left: 15px;
+                        top: 29px;
+                    }
+            
+                    .main__large-text {
+                        left: 15px;
+                        top: 174px;
+                        height: 120px;
+                        width: 295px;
+                    }
+            
+                    .main__large-text--italic {
+                        left: 15px;
+                        top: 142px;
+                    }
                 }
             }
         }
+
+        .main__page {
+            margin-top: 36px;
+            margin-bottom: 36px;
+        }
         
         .main__aside {
+            margin-top: 0;
+            width: 370px;
+            justify-content: flex-start;
 
             .main__aside-posts {
 
+                .main__aside-header {
+
+                }
+
                 .main__aside-img {
+                    margin-left: 39px;
     
                     .main__aside-text--border-blue {
                     }
@@ -640,7 +857,18 @@
                     }
                 }
             }
+
+            .main__aside-instagram {
+                margin-left: 39px;
+            }
+
+            .main__aside-tags {
+                margin-left: 39px;
+            }
+
+            .main__aside-email {
+                margin-left: 39px;
+            }
         }
     }
 }
-
