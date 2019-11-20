@@ -8,11 +8,10 @@
     .footer__upper-section {
         display: grid;
         grid-template-columns: repeat(3, 370px);
-        grid-template-rows: 500px;
+        grid-template-rows: 523px;
         grid-template-areas: "footer__section-1 footer__section-2 footer__section-3";
-        grid-gap: 30px;
+        grid-gap: 48px;
         justify-content: center;
-        height: 500px;
         background-color: #171717;
         padding: 0;
         margin: 0;
@@ -63,76 +62,83 @@
                     }
                 }
             }
-        }    
-    }
-
-    .footer__section-2 {
-        grid-area: footer__section-2;
-        margin-top: 62px;
-
-        .footer__section-2--header {
-            margin: 0;
-            margin-bottom: 28px;
-            font-weight: bold;
-            font-size: 20px;
-        }
-
-        .footer__section-2--img-1,
-        .footer__section-2--img-2,
-        .footer__section-2--img-3 {
-            position: relative;
-            border-radius: 3px;
-            margin-bottom: 25px;
-
-            .footer__text--bold {
-                position: absolute;
-                font-weight: bold;
-                font-size: 15px;
-                left: 115px;
-                top: 6px;
-                width: 178px;
-                height: 49px;
-            }
-
-            .footer__text--italic {
-                position: absolute;
-                font-style: italic;
-                left: 115px;
-                top: 68px;
-            }
-        }
-
-    }
-    
-    .footer__section-3 {
-        grid-area: footer__section-3;
+        } 
         
-        .footer__section-3--header {
-            color: white;
-            margin-top: 62px;
-            margin-bottom: 38px;
-            font-weight: bold;
-            font-size: 20px;
-        }
+        .footer__section-2 {
+            grid-area: footer__section-2;
+    
+            .footer__section-2--header {
+                margin-top: 62px;
+                margin-bottom: 28px;
+                font-weight: bold;
+                font-size: 20px;
+            }
+    
+            .footer__section-2-img {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 360px;
 
-        .footer__input--name,
-        .footer__input--email {
-            height: 50px;
-            width: 270px;
-            background-color: #373737;
-            border-radius: 3px;
-            color: #AEB3BB;
-            padding-left: 15px;
-            margin-bottom: 10px;
+                .footer__section-2--img-1,
+                .footer__section-2--img-2,
+                .footer__section-2--img-3 {
+                    position: relative;
+                    border-radius: 3px;
+                    height: 95px;
+        
+                    .footer__text--bold {
+                        position: absolute;
+                        font-weight: bold;
+                        font-size: 15px;
+                        left: 115px;
+                        top: 6px;
+                        width: 178px;
+                        height: 49px;
+                    }
+        
+                    .footer__text--italic {
+                        position: absolute;
+                        font-style: italic;
+                        left: 115px;
+                        top: 68px;
+                    }
+                }
+            }
         }
-
-        .footer__button {
-            height: 50px;
-            width: 270px;
-            background-color: #232323;
-            border-radius: 3px;
-            font-weight: bold;
-            color: white;
+        
+        .footer__section-3 {
+            grid-area: footer__section-3;
+            
+            .footer__section-3--header {
+                color: white;
+                font-weight: bold;
+                font-size: 20px;
+                margin-top: 62px;
+                margin-bottom: 38px;
+            }
+    
+            .footer__input--name,
+            .footer__input--email {
+                height: 50px;
+                width: 270px;
+                background-color: #373737;
+                border-radius: 3px;
+                color: #AEB3BB;
+                padding-left: 15px;
+                margin-bottom: 10px;
+                border: none;
+            }
+    
+            .footer__button {
+                height: 50px;
+                width: 270px;
+                background-color: #232323;
+                border-radius: 3px;
+                font-weight: bold;
+                color: white;
+                border: none;
+            }
         }
     }
 
@@ -170,17 +176,41 @@
         .footer__upper-section {
             display: grid;
             grid-template-columns: 270px 293px;
-            grid-template-rows: 451px 234px;
+            grid-template-rows: 474px 246px;
             grid-template-areas: "footer__section-1 footer__section-2"
                                 "footer__section-3 footer__section-3";
             grid-gap: 48px 41px;
-            height: 787px;
+            height: 795px;
+        
+            .footer__section-2 {
+
+                .footer__section-2--header {
+                    margin-top: 62px;
+                    margin-bottom: 28px;
+                }
+
+                .footer__section-2-img {
+        
+                    .footer__section-2--img-1,
+                    .footer__section-2--img-2,
+                    .footer__section-2--img-3 {
+                        height: 95px;
+
+                        .footer__text--bold {
+                        }
+            
+                        .footer__text--italic {
+                        }
+                    }
+                }
+            }
+            
+            .footer__section-3 {
 
                 .footer__section-3--header {
                     margin-top: 0;
-                    color: white;
                 }
-
+        
                 .footer__input--name,
                 .footer__input--email {
                     width: 585px;
@@ -190,6 +220,7 @@
                     width: 585px;
                 }
             }
+        }
 
         .footer__list {
             display: grid;
@@ -206,28 +237,83 @@
         .footer__upper-section {
             display: grid;
             grid-template-columns: 293px;
-            grid-template-rows: 248px 389px 234px;
+            grid-template-rows: 290px 410px 230px;
             grid-template-areas: "footer__section-1"
                                  "footer__section-2"
                                  "footer__section-3";
-            grid-gap: 48px 41px;
+            grid-gap: 48px;
             height: 1063px;
 
+            .footer__section-1 {
+                margin-top: 51px;
+                
+                .footer__text--border-blue {
+                }
+    
+                .footer__text {
+                    margin-top: 30px;
+                    margin-bottom: 48px;
+                }
+    
+                .footer__section-1--header {
+                    margin-top: 0;
+                    margin-bottom: 23px;
+                }
+    
+                .footer__social-network {
+    
+                    .footer__img-social-network {
+                        margin-right: 15px;
+    
+                        .footer__img-social-network--plus {
+                            margin-left: 2px;
+                        }
+                    }
+                }
+            } 
+            
+            .footer__section-2 {
+
+                .footer__section-2--header {
+                    margin: 0;
+                    margin-bottom: 28px;
+                }
+                
+                .footer__section-2-img {
+
+                    .footer__section-2--img-1,
+                    .footer__section-2--img-2,
+                    .footer__section-2--img-3 {
+
+                        .footer__text--bold {
+                        }
+            
+                        .footer__text--italic {
+                        }
+                    }
+                }
+            }
+            
+            .footer__section-3 {
+                
                 .footer__section-3--header {
                     margin-top: 0;
-                    color: white;
+                    margin-bottom: 38px;
                 }
-
+        
                 .footer__input--name,
                 .footer__input--email {
                     width: 293px;
+                    padding-left: 15px;
+                    margin-bottom: 10px;
                 }
         
                 .footer__button {
                     width: 293px;
                 }
             }
-
+        }
+    
         .footer__list {
             display: grid;
             grid-template-columns: 309px;
