@@ -29,15 +29,20 @@
             position: absolute;
             height: 100%;
             width: 100%;
+            cursor: pointer;
+        }
+
+        .main__photo-description:hover {
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 5px;
+            transition-duration: 0.3s;
         }
 
         .main__photo-description:hover
         .main__big-text--bold {
             text-decoration: underline;
-        }
-
-        .img--big {
-            height: 560px;
         }
 
         .main__big-text--border-blue {
@@ -83,6 +88,7 @@
             position: absolute;
             height: 100%;
             width: 100%;
+            cursor: pointer;
         }
         
         
@@ -154,6 +160,7 @@
                 height: 570px;
                 width: 787px;
                 z-index: 2;
+                cursor: pointer;
 
                 .main__large-text--bold {
                     left: 50px;
@@ -249,6 +256,7 @@
             .main__page--decrease {
                 opacity: 0.4;
                 color: #171717;
+                cursor: pointer;
             }
     
             .main__page--2,
@@ -258,6 +266,7 @@
             .main__page--increase {
                 font-size: 16px;
                 color: #171717;
+                cursor: pointer;
             }
         }
     
@@ -274,6 +283,7 @@
             .main__page--1 {
                 font-size: 16px;
                 color: #FFFFFF;
+                cursor: pointer;
             }
         }
 
@@ -328,6 +338,7 @@
                 top: 0;
                 height: 100%;
                 width: 100%;
+                cursor: pointer;
             }
     
             .main__photo-description:hover
@@ -413,6 +424,7 @@
                 justify-content: center;
                 align-items: center;
                 border: none;
+                cursor: pointer;
             }
             
             .instagram-button:hover {
@@ -464,6 +476,7 @@
                     width: 84px;
                     margin: 0 7px 10px 0;
                     font-size: 14px;
+                    cursor: pointer;
                 }
 
                 .main__tags-text--Freelance {
@@ -476,6 +489,7 @@
                     width: 91px;
                     margin: 0 7px 10px 0;
                     font-size: 14px;
+                    cursor: pointer;
                 }
 
                 .main__tags-text--Money {
@@ -488,6 +502,7 @@
                     width: 72px;
                     margin: 0 7px 10px 0;
                     font-size: 14px;
+                    cursor: pointer;
                 }
 
                 .main__tags-text--Experience {
@@ -500,6 +515,7 @@
                     width: 100px;
                     margin: 0 7px 10px 0;
                     font-size: 14px;
+                    cursor: pointer;
                 }
 
                 .main__tags-text--Lifestyle {
@@ -512,6 +528,7 @@
                     width: 82px;
                     margin: 0 7px 10px 0;
                     font-size: 14px;
+                    cursor: pointer;
                 }
 
                 .main__tags-text--SEO  {
@@ -524,6 +541,7 @@
                     width: 58px;
                     margin: 0 7px 10px 0;
                     font-size: 14px;
+                    cursor: pointer;
                 }
 
                 .main__tags-text--Wordpress {
@@ -536,6 +554,7 @@
                     width: 98px;
                     margin: 0 7px 10px 0;
                     font-size: 14px;
+                    cursor: pointer;
                 }
 
                 .main__tags-text--Marketing {
@@ -548,6 +567,7 @@
                     width: 93px;
                     margin: 0 7px 10px 0;
                     font-size: 14px;
+                    cursor: pointer;
                 }
 
                 .main__tags-text--UX {
@@ -560,6 +580,7 @@
                     width: 49px;
                     margin: 0 7px 10px 0;
                     font-size: 14px;
+                    cursor: pointer;
                 }
 
                 .main__tags-text--Modern {
@@ -572,6 +593,7 @@
                     width: 79px;
                     margin: 0 7px 10px 0;
                     font-size: 14px;
+                    cursor: pointer;
                 }
 
                 .main__tags-text--Success {
@@ -584,6 +606,7 @@
                     width: 79px;
                     margin: 0 7px 10px 0;
                     font-size: 14px;
+                    cursor: pointer;
                 }
 
                 .main__tags-text--Nature {
@@ -596,6 +619,7 @@
                     width: 72px;
                     margin: 0 7px 10px 0;
                     font-size: 14px;
+                    cursor: pointer;
                 }
 
                 .main__tags-text--Productivity {
@@ -608,6 +632,7 @@
                     width: 104px;
                     margin: 0 7px 10px 0;
                     font-size: 14px;
+                    cursor: pointer;
                 }
 
                 .main__tags-text--Sales-page {
@@ -620,6 +645,7 @@
                     width: 97px;
                     margin: 0 7px 10px 0;
                     font-size: 14px;
+                    cursor: pointer;
                 }
 
                 .main__tags-text--Sell {
@@ -632,6 +658,7 @@
                     width: 53px;
                     margin: 0 7px 10px 0;
                     font-size: 14px;
+                    cursor: pointer;
                 }
 
                 .main__tags-text--Teamwork {
@@ -644,6 +671,7 @@
                     width: 95px;
                     margin: 0 7px 10px 0;
                     font-size: 14px;
+                    cursor: pointer;
                 }
 
                 .main__tags-text--Monetize {
@@ -656,6 +684,7 @@
                     width: 88px;
                     margin: 0 7px 10px 0;
                     font-size: 14px;
+                    cursor: pointer;
                 }
 
                 .tags-text:hover,
@@ -692,6 +721,7 @@
                 font-size: 14px;
                 padding-left: 15px;
                 margin-bottom: 10px;
+                cursor: pointer;
             }
 
             .main__input:hover {
@@ -714,6 +744,7 @@
                 color: white;
                 font-size: 14px;
                 border: none;
+                cursor: pointer;
             }
 
             .email-button:hover {
