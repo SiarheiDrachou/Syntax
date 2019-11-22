@@ -10,7 +10,7 @@
         grid-template-columns: repeat(3, 370px);
         grid-template-rows: 523px;
         grid-template-areas: "footer__section-1 footer__section-2 footer__section-3";
-        grid-gap: 48px;
+        grid-gap: 29px;
         justify-content: center;
         background-color: #171717;
         padding: 0;
@@ -139,6 +139,7 @@
         
         .footer__section-3 {
             grid-area: footer__section-3;
+            margin-left: 4px;
             
             .footer__section-3--header {
                 color: white;
