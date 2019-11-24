@@ -191,6 +191,7 @@ body {
   position: absolute;
   margin: 0;
   font-size: 26px;
+  line-height: 36px;
   left: 20px;
   top: 465px;
   color: white;
@@ -253,6 +254,7 @@ body {
   position: absolute;
   margin: 0;
   font-size: 26px;
+  line-height: 30px;
   left: 20px;
   top: 182px;
   color: white;
@@ -351,6 +353,7 @@ body {
   left: 30px;
   top: 147px;
   font-size: 14px;
+  line-height: 24px;
   color: #666666;
   width: 610px;
   height: 72px;
@@ -543,6 +546,7 @@ body {
   position: absolute;
   margin: 0;
   font-size: 20px;
+  line-height: 28px;
   left: 0;
   top: 215px;
   color: #171717;
@@ -961,6 +965,7 @@ body {
   height: 48px;
   color: #666666;
   font-size: 14px;
+  line-height: 24px;
   margin-bottom: 27px;
 }
 .main .main__aside .main__aside-email .main__input {
@@ -1017,21 +1022,6 @@ body {
 }
 .main .img-5 {
   grid-area: img-5;
-}
-.main .img-6 {
-  grid-area: img-6;
-}
-.main .img-7 {
-  grid-area: img-7;
-}
-.main .img-8 {
-  grid-area: img-8;
-}
-.main .img-9 {
-  grid-area: img-9;
-}
-.main .img-10 {
-  grid-area: img-10;
 }
 
 @media (min-width: 768px) and (max-width: 1280px) {
@@ -1179,6 +1169,7 @@ body {
   color: white;
   padding: 0;
   margin: 0;
+  font-family: 'PtSans';
 }
 .footer .footer__upper-section {
   display: grid;
@@ -1204,6 +1195,7 @@ body {
   border-radius: 3px;
 }
 .footer .footer__upper-section .footer__section-1 .footer__text {
+  line-height: 22px;
   width: 270px;
   height: 66px;
   margin-top: 30px;
@@ -1308,6 +1300,7 @@ body {
   position: absolute;
   font-weight: bold;
   font-size: 15px;
+  line-height: 26px;
   left: 115px;
   top: 6px;
   width: 178px;
@@ -1449,6 +1442,9 @@ body {
     margin-top: 62px;
     margin-bottom: 28px;
   }
+  .footer .footer__upper-section .footer__section-3 {
+    margin-left: 0;
+  }
   .footer .footer__upper-section .footer__section-3 .footer__section-3--header {
     margin-top: 0;
   }
@@ -1493,6 +1489,9 @@ body {
     margin: 0;
     margin-bottom: 28px;
   }
+  .footer .footer__upper-section .footer__section-3 {
+    margin-left: 0;
+  }
   .footer .footer__upper-section .footer__section-3 .footer__section-3--header {
     margin-top: 0;
     margin-bottom: 38px;
@@ -1516,4 +1515,12 @@ body {
     margin-top: 24px;
     margin-bottom: 24px;
   }
+}
+@font-face {
+  font-family: 'lato';
+  src: url(../fonts/Lato-Light.ttf) format(truetype);
+}
+@font-face {
+  font-family: 'PtSans';
+  src: url(../fonts/PTSans-Regular.ttf) format(truetype);
 }
