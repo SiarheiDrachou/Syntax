@@ -1,6 +1,7 @@
 * {
 box-sizing: border-box;
 }
+
 body {
     margin: 0;
     padding: 0;
@@ -8,8 +9,6 @@ body {
 
 .main {
     display: grid;
-    grid-template-columns: repeat(4, 65px);
-    grid-template-rows: repeat(4, 30px);
     grid-template-areas: "main__grid-column-1 main__grid-column-2 main__grid-column-3 main__grid-column-4"
                          "main__grid-column-1 main__grid-column-2 main__grid-column-3 main__grid-column-4"
                          "main__grid-column-1 main__grid-column-2 main__grid-column-3 main__grid-column-4"
@@ -17,93 +16,81 @@ body {
     grid-gap: 10px;
 }
 
+.grid-item {
+    margin-bottom: 10px;
+}
+
 .main__grid-item-1 {
-    width: 50px;
     height: 50px;
     background-color: blue;
-    margin-bottom: 10px;
 }
+
 .main__grid-item-2 {
-    width: 60px;
     height: 60px;
     background-color: green;
-    margin-bottom: 10px;
 }
+
 .main__grid-item-3 {
-    width: 70px;
     height: 50px;
     background-color: red;
-    margin-bottom: 10px;
 }
+
 .main__grid-item-4 {
-    width: 50px;
     height: 60px;
     background-color: orange;
-    margin-bottom: 10px;
 }
+
 .main__grid-item-5 {
-    width: 50px;
     height: 70px;
     background-color: gray;
-    margin-bottom: 10px;
 }
+
 .main__grid-item-6 {
-    width: 60px;
     height: 70px;
     background-color: blue;
-    margin-bottom: 10px;
 }
+
 .main__grid-item-7 {
-    width: 70px;
     height: 60px;
     background-color: green;
-    margin-bottom: 10px;
 }
+
 .main__grid-item-8 {
-    width: 30px;
     height: 50px;
     background-color: red;
-    margin-bottom: 10px;
 }
+
 .main__grid-item-9 {
-    width: 50px;
     height: 30px;
     background-color: orange;
-    margin-bottom: 10px;
 }
+
 .main__grid-item-10 {
-    width: 20px;
     height: 70px;
     background-color: gray;
-    margin-bottom: 10px;
 }
+
 .main__grid-item-11 {
-    width: 70px;
     height: 50px;
     background-color: blue;
-    margin-bottom: 10px;
 }
+
 .main__grid-item-12 {
-    width: 60px;
     height: 20px;
     background-color: green;
-    margin-bottom: 10px;
 }
+
 .main__grid-item-13 {
-    width: 30px;
     height: 50px;
     background-color: red;
-    margin-bottom: 10px;
 }
+
 .main__grid-item-14 {
-    width: 50px;
     height: 20px;
     background-color: orange;
-    margin-bottom: 10px;
 }
+
 .main__grid-item-15 {
-    width: 50px;
     height: 80px;
     background-color: gray;
-    margin-bottom: 10px;
 }
