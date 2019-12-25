@@ -1,0 +1,23 @@
+.main {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 85%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-column-gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.card .card-image {
+    position: absolute;
+    top: 8px;
+    width: 24px;
+    right: 8px;
+}
+
+.card .card-image img {
+    border-radius: 50%;
+}
