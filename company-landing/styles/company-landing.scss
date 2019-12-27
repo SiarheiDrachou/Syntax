@@ -1,3 +1,10 @@
-@import "header";
-@import "main";
-@import "footer";
+@import "./header/header";
+@import "./main/main";
+@import "./main/what-we-do";
+@import "./main/achievments";
+@import "./main/our-approach";
+@import "./main/idea";
+@import "./main/technologies";
+@import "./main/projects";
+@import "./footer/footer";
+@import "./font/font";

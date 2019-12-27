@@ -71,7 +71,11 @@
         margin-bottom: 10px;
         font-size: 14px;
         line-height: 18px;
-        color: #212121;
+        color: rgb(33, 33, 33);
+        padding-left: 10px;
+        mix-blend-mode: normal;
+        font-family: 'Source Sans Pro';
+        border: none;
     
         @media (max-width: 500px) {
             width: 280px;
@@ -96,6 +100,9 @@
         line-height: 18px;
         color: rgb(33, 33, 33);
         margin-bottom: 10px;
+        padding-left: 10px;
+        mix-blend-mode: normal;
+        font-family: 'Source Sans Pro';
     
         @media (max-width: 500px) {
             width: 280px;

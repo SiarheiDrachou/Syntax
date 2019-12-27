@@ -1,0 +1,105 @@
+.main__idea {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    background-color: #4D636F;
+    width: 100%;
+    height: 412px;
+
+    @media (max-width: 500px) {
+        height: 304px;
+    }
+
+    .main__idea--header {
+        font-weight: bold;
+        font-size: 50px;
+        line-height: 63px;
+        color: #FFFFFF;
+        margin-top: 79px;
+    
+        @media (max-width: 768px) {
+            margin-top: 89px;
+        }
+    
+        @media (max-width: 500px) {
+            margin-top: 52px;
+            font-size: 24px;
+            line-height: 30px;
+        }
+    }
+    
+    .main__idea--text {
+        width: 761px;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 30px;
+        color: #FFFFFF;
+        margin-top: 34px;
+        margin-bottom: 42px;
+    
+        @media (max-width: 980px) {
+            width: 100%;
+            margin-top: 30px;
+            margin-bottom: 46px;
+        }
+    
+        @media (max-width: 768px) {
+            margin-bottom: 54px;
+            font-size: 20px;
+            line-height: 25px;
+            height: 50px;
+        }
+    
+        @media (max-width: 500px) {
+            font-size: 18px;
+            line-height: 23px;
+            margin-top: 18px;
+            margin-bottom: 18px;
+            width: 286px;
+            height: 115px;
+        }
+    }
+    
+    .main__idea--button {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 23px;
+        color: #FFFFFF;
+        background-color: #E75A7C;
+        border-radius: 6px;
+        border: none;
+        width: 260px;
+        height: 55px;
+        padding: 0;
+    
+        @media (max-width: 980px) {
+            width: 295px;
+        }
+    
+        @media (max-width: 768px) {
+            width: 225px;
+        }
+    
+        @media (max-width: 500px) {
+            font-size: 18px;
+            line-height: 23px;
+            width: 220px;
+            height: 42px;
+        }
+    }
+
+    .main__idea--button:hover {
+        background-color: #FA89A4;
+    }
+    
+    .main__idea--button:focus {
+        background-color: #E75A7C;
+        border: 2px dashed #FFBDCD;
+    }
+    
+    .main__idea--button:active {
+        background-color: #E31B4B;
+        border: none;
+    }
+}
