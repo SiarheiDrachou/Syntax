@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+        <!-- Materialize CSS & Icons -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+
+        <link rel="stylesheet" href="./main.css" />
+        
+        <title> Lesson 31 - Classwork </title>
+    </head>
+    <body>
+        <div id="app" class="container">
+            <div class="row">
+                <!-- Preloader  -->
+                <preloader v-if = "isLoading"></preloader>
+
+                <!-- TODO List -->
+                <ul class="collection with-header" v-else>
+                    <li class="collection-header">
+                        <todo-header>
+                            <template v-clot:title> Список дел: </template>
+
+                            <template v-clot:badge> 
+                                <span class="new badge teal" data-badge-caption="выполнено"> 
+                                    {{ doneTodos.length }} из {{ todoItems.length }} 
+                                </span> 
+                            </template>
+
+                            <template v-clot:title> 
+                                <form class="row" @submit.prevent="addNewTodo">
+                                    <div class="col s11">
+                                        <input 
+                                            class        = "validate"
+                                            type         = "text"
+                                            placeholder  = "Что сделать?"
+                                            v-model.trim = "newTodo"
+                                        />
+                                    </div>
+                                
+                                    <button class="btn waves-effect waves-light" type="submit"> 
+                                        Добавить 
+                                    </button>
+                                </form> 
+                            </template>
+                        </todo-header>
+                        <todo-list>
+                            
+                        </todo-list>
+                    </li>
+                    <todo-Item 
+                        v-for = "(item, index) in todoItems" 
+                        :key  = "item.id"
+                        :is-checked = "item.isChecked"
+                        @remove-item = "removeTodoItem(index)"
+                        @checked-change = "item.isChecked = $event"
+                        @create-item = "editNewTodo(index)"
+                    >
+                        {{item.text}}
+                    </todo-Item>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Vue.js -->
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+        <!-- Materialize -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+        <script src="./index.js"></script>
+    </body>
+</html>
