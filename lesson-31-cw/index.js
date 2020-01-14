@@ -53,13 +53,28 @@ let todoItemComponent = {
 };
 
 let todoHeaderComponent = {
-  template: `<li class="collection-header">
-                <h4> <slot name="title"></slot> </h4>
-                
-                <slot name="badge"></slot>
-                
-                <slot ></slot>
-            </li>`  
+  template: `<slot name="header">
+                <h4> Список дел: </h4>
+            </slot>`
+            
+};
+
+let todoListComponent = {
+    template: `<slot name="badge"></slot>`  
+};
+
+let todoInputComponent = {
+    template: `<div class="col s11">
+                    <slot name="input"></slot>
+                </div>`  
+};
+
+let todoButtonComponent = {
+    template: `<slot name="button">
+                    <button class="btn waves-effect waves-light" type="submit"> 
+                        Добавить 
+                    </button>
+                </slot>`  
 };
 
 new Vue({
@@ -67,7 +82,10 @@ new Vue({
     components: {
         preloader: preloaderComponent,
         todoItem: todoItemComponent,
-        todoHeader: todoHeaderComponent
+        todoHeader: todoHeaderComponent,
+        todoList: todoListComponent,
+        todoInput: todoInputComponent,
+        todoButton: todoButtonComponent
     },
     data: {
         isChecked: false,
