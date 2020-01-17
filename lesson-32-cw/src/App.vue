@@ -17,7 +17,7 @@
                             <todo-input v-model= "newTodo"></todo-input>
                             
                             <todo-button>
-                                <template v-slot:button></template>
+                                <template v-slot:button> Добавить </template>
                             </todo-button>
                         </form> 
                     </li>
@@ -31,6 +31,10 @@
                     >
                         {{item.text}}
                     </todo-Item>
+
+                    <delete-todo @delete-item = "deleteAllTodoItem()">
+                        <template v-slot:delete> Удалить </template>
+                    </delete-todo>
                 </ul>
             </div>
         </div>
@@ -43,6 +47,7 @@ import todoHeaderComponent from './components/TodoHeaderComponent.vue';
 import todoInputComponent from './components/TodoInputComponent.vue';
 import todoListComponent from './components/TodoListComponent.vue';
 import todoItemComponent from './components/TodoItem.vue';
+import deleteButtonComponent from './components/DeleteButtonComponent.vue';
 export default {
   components: {
         preloader: preloaderComponent,
@@ -50,7 +55,8 @@ export default {
         todoHeader: todoHeaderComponent,
         todoList: todoListComponent,
         todoInput: todoInputComponent,
-        todoButton: todoButtonComponent
+        todoButton: todoButtonComponent,
+        deleteTodo: deleteButtonComponent
     },
     data() {
       return {
@@ -95,6 +101,7 @@ export default {
             });
 
             this.newTodo = '';
+            localStorage.setItem('arr', this.todoItems);
         },
 
         hidePreloader() {
@@ -103,11 +110,17 @@ export default {
 
         removeTodoItem(itemIdx) {
             this.todoItems.splice(itemIdx, 1);
+            localStorage.setItem('arr', this.todoItems);
+        },
+        deleteAllTodoItem() {
+            this.todoItems.splice(0);
+            localStorage.setItem('arr', this.todoItems);
         },
 
         editNewTodo(itemIdx) {
             let newEdit = prompt('Введите новое задание');
             this.todoItems[itemIdx].text = newEdit;
+            localStorage.setItem('arr', this.todoItems);
         }
     }
 }
