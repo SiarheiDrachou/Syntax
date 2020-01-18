@@ -48,6 +48,7 @@ import todoInputComponent from './components/TodoInputComponent.vue';
 import todoListComponent from './components/TodoListComponent.vue';
 import todoItemComponent from './components/TodoItem.vue';
 import deleteButtonComponent from './components/DeleteButtonComponent.vue';
+
 export default {
   components: {
         preloader: preloaderComponent,
@@ -90,7 +91,21 @@ export default {
             }
         }
     },
+    mounted() {
+        if (localStorage.getItem('todoItems')) {
+            try {
+                this.todoItems = JSON.parse(localStorage.getItem('todoItems'));
+            } 
+            catch(e) {
+                localStorage.removeItem('todoItems');
+            }
+        }
+    },
     methods: {
+        saveTodo() {
+            const parsed = JSON.stringify(this.todoItems);
+            localStorage.setItem('todoItems', parsed);
+        },
         addNewTodo() {
             if (!this.newTodo.length) return;
 
@@ -99,9 +114,9 @@ export default {
                 text      : this.newTodo,
                 isChecked : false
             });
-
+            
             this.newTodo = '';
-            localStorage.setItem('arr', this.todoItems);
+            this.saveTodo();
         },
 
         hidePreloader() {
@@ -110,17 +125,17 @@ export default {
 
         removeTodoItem(itemIdx) {
             this.todoItems.splice(itemIdx, 1);
-            localStorage.setItem('arr', this.todoItems);
+            this.saveTodo();
         },
         deleteAllTodoItem() {
             this.todoItems.splice(0);
-            localStorage.setItem('arr', this.todoItems);
+            this.saveTodo();
         },
 
         editNewTodo(itemIdx) {
             let newEdit = prompt('Введите новое задание');
             this.todoItems[itemIdx].text = newEdit;
-            localStorage.setItem('arr', this.todoItems);
+            this.saveTodo();
         }
     }
 }
