@@ -12,10 +12,6 @@ function startSession() {
         let elMenu = document.querySelector(`.${localStorage.getItem('value')}`);
         elMenu.classList.add('active');
     } 
-    else {
-        let elMenu = document.querySelector(`.${localStorage.getItem('value')}`);
-        elMenu.classList.add('active');
-    }
     readMoney();
 }
 
@@ -30,6 +26,7 @@ function buildTbody(arrKeys, arrValues) {
                             </tr>`;
         tbodyEl.insertAdjacentHTML('beforeend', tbodyTextEl);
     };
+    console.log(localStorage);
 }
 
 async function readMoney () {

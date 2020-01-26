@@ -60,19 +60,30 @@ let todoHeaderComponent = {
 };
 
 let todoListComponent = {
-    template: `<slot name="badge"></slot>`  
+    props:['doneTodos', 'todoItems'],
+    template: `<span class="new badge teal" data-badge-caption="выполнено">
+                    {{ doneTodos.length }} из {{ todoItems.length }}
+                </span>`  
 };
 
 let todoInputComponent = {
+    props: ['newTodo'],
     template: `<div class="col s11">
-                    <slot name="input"></slot>
+                    <input 
+                        class        = "validate"
+                        type         = "text"
+                        placeholder  = "Что сделать?" 
+                        v-model.trim = "newTodo"
+                        :value = "newTodo"
+                        @input = "$emit('input', $event.target.value)"
+                    />
                 </div>`  
 };
 
 let todoButtonComponent = {
     template: `<slot name="button">
-                    <button class="btn waves-effect waves-light" type="submit"> 
-                        Добавить 
+                    <button class="btn waves-effect waves-light" type="submit" @input = "$emit('newTodo', addNewTodo)" > 
+                        Добавить
                     </button>
                 </slot>`  
 };

@@ -54,6 +54,7 @@ body {
                 0px 3px 1px rgba(0, 0, 0, 0.12),
                 0px 1px 5px rgba(0, 0, 0, 0.2);
     background-color: #4D636F;
+    overflow: hidden;
     
     @media (max-width: 980px) {
         grid-template-rows: 60px 659px;
@@ -86,7 +87,22 @@ body {
         list-style-type: none;
     
         @media (max-width: 980px) {
-            display: none;
+            grid-area: none;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            top: 0;
+            right: -300px;
+            margin: 0;
+            margin-top: 60px;
+            list-style-type: none;
+            height: 50%;
+            width: 300px;
+            z-index: 3;
+            background-color: rgb(77, 99, 111);
+            transition-duration: 1s;
         }
     }
 
@@ -103,10 +119,10 @@ body {
         margin-top: 60px;
         list-style-type: none;
         height: 50%;
-        width: 50%;
+        width: 300px;
         z-index: 3;
         background-color: rgb(77, 99, 111);
-
+        transition-duration: 1s;
     }
     
     .header__drop-down-menu {
@@ -213,5 +229,6 @@ body {
         filter: invert(1);
         width: 20px;
         cursor: pointer;
+        transition-duration: 2s;
     }
 }

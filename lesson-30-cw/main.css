@@ -1,0 +1,42 @@
+html, body, #app {
+    height: 100%;
+}
+
+#app {
+    padding: 3rem 1rem;
+}
+
+#toast-container {
+    top: 1%;
+    right: 2%; 
+}
+
+form.row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+form.row .col.s11 {
+    margin-left: 0;
+}
+
+span.badge.new {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    font-weight: 400;
+}
+
+.text {
+    position: relative;
+    width: 100%;
+}
+.close-img {
+    position: absolute;
+    right: 10px;
+}
+.create-img {
+    position: absolute;
+    right: 40px;
+}

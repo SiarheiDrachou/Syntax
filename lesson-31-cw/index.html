@@ -26,25 +26,10 @@
                             <template v-slot:header></template>
                         </todo-header>
 
-                        <todo-list>
-                            <template v-slot:badge>
-                                <span class="new badge teal" data-badge-caption="выполнено">
-                                    {{ doneTodos.length }} из {{ todoItems.length }}
-                                </span>
-                            </template>
-                        </todo-list>
+                        <todo-list :done-todos="doneTodos" :todo-items="todoItems"></todo-list>
                 
                         <form class="row" @submit.prevent="addNewTodo">
-                            <todo-input>
-                                <template v-slot:input>
-                                    <input 
-                                        class        = "validate"
-                                        type         = "text"
-                                        placeholder  = "Что сделать?"
-                                        v-model.trim = "newTodo"
-                                    />
-                                </template>
-                            </todo-input>
+                            <todo-input :value = "newTodo" @input="newTodo = $event"></todo-input>
                             
                             <todo-button>
                                 <template v-slot:button></template>

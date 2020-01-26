@@ -1,0 +1,60 @@
+  
+    ul  {
+        list-style-type: none;
+    }
+
+    * {
+        font-size: 18px;
+    }
+
+    .bg-orange {
+        background-color: orange;
+    }
+
+    #block {
+        font-size: 10px;
+           }
+
+    ul li {
+        text-transform: uppercase; 
+    }
+
+    .content-wrapper > mark {
+        background-color: blue;
+        color: white;
+    }
+
+    h2 ~ section {
+                    font-weight: bold;
+                 }
+
+    h2 + section {
+        background-color: yellow;
+    }
+
+    [class] {
+        text-transform: lowercase;
+        color: red;
+    }
+
+    [href="https://example.com"] {
+        font-size: 20px;
+    }
+/* 
+    [title~="beautiful"] {
+        font-style: italic;
+    }
+
+    [class*="app"] {
+        text-decoration: line-through;
+    }
+
+    a[href^="http://"] {
+        color: red;
+        text-decoration: line-through;
+        font-weight: bold;
+    }
+
+    a[href$=".by"] {
+        font-size: 8px;
+    } */

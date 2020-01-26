@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+        <!-- Materialize CSS & Icons -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+
+        <link rel="stylesheet" href="./main.css" />
+        
+        <title> Lesson 30 - Classwork </title>
+    </head>
+    <body>
+        <div id="app" class="container">
+            <div class="row">
+                <!-- Preloader  -->
+                <div class="col s12 center-align" v-if="isLoading">
+                    <div class="preloader-wrapper big active">
+                        <div class="spinner-layer spinner-blue-only">
+                            <div class="circle-clipper left">
+                                <div class="circle"></div>
+                            </div>
+                            <div class="gap-patch">
+                                <div class="circle"></div>
+                            </div>
+                            <div class="circle-clipper right">
+                                <div class="circle"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TO DO List -->
+                <ul class="collection with-header" v-else>
+                    <li class="collection-header">
+                        <h4> Список дел: </h4>
+                        <span class="new badge teal" data-badge-caption="выполнено"> 
+                            {{doneTodos.length}} из {{todoItems.length}} 
+                        </span>
+                        
+                        <form class="row" @submit.prevent="addNewTodo">
+                            <div class="col s11">
+                                <input type="text" class="validate" placeholder="Что сделать?" v-model="newTodo"/>
+                            </div>
+                            
+                            <button class="btn waves-effect waves-light" type="submit"> Добавить </button>
+                        </form>
+                    </li>
+                    <li class="collection-item" v-for="item in todoItems" :key="item.id">
+                        <label 
+                            class="grey-text" 
+                            :class="{
+                                'text-lighten-2': item.isChecked,
+                                'text-darken-4': !item.isChecked
+                            }"
+                        >
+                            <input type="checkbox" v-model="item.isChecked" />
+                            <span class="text" :style="{textDecoration: item.isChecked ? 'line-through' : 'none'}"> {{item.text}} 
+                                <i 
+                                    class="material-icons create-img"
+                                    v-on:click=""
+                                >  
+                                    create
+                                </i>
+                                <i 
+                                    class="material-icons close-img"
+                                    v-on:click="todoItems.splice(todoItems.id, 1)"
+                                >  
+                                    clear
+                                </i>
+                            </span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Vue.js -->
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+        <!-- Materialize -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+        <script src="./index.js"></script>
+    </body>
+</html>

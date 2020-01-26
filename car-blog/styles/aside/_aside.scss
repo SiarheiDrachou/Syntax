@@ -1,0 +1,30 @@
+.aside {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin-bottom: 68px;
+
+    @media (max-width: 1280px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-left: 80px;
+        width: 604px;
+    }
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin-left: 0;
+        width: 320px;
+        margin-left: 50px;
+    }
+
+    .main__aside-header {
+        line-height: 23px;
+        width: 270px;
+        color: #171717;
+        margin-top: 0;
+        margin-bottom: 23px;
+    }
+}

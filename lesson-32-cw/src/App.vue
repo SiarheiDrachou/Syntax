@@ -29,7 +29,7 @@
                         @checked-change = "item.isChecked = $event"
                         @create-item = "editNewTodo(index)"
                     >
-                        {{item.text}}
+                        {{item.text | readMore(50, '...')}}
                     </todo-Item>
 
                     <delete-todo @delete-item = "deleteAllTodoItem()">
@@ -48,9 +48,11 @@ import todoInputComponent from './components/TodoInputComponent.vue';
 import todoListComponent from './components/TodoListComponent.vue';
 import todoItemComponent from './components/TodoItem.vue';
 import deleteButtonComponent from './components/DeleteButtonComponent.vue';
+import helpers from "@/mixins/helpers";
 
 export default {
-  components: {
+    mixins: [helpers],
+    components: {
         preloader: preloaderComponent,
         todoItem: todoItemComponent,
         todoHeader: todoHeaderComponent,
@@ -64,13 +66,7 @@ export default {
         isChecked: false,
         isLoading: true,
         newTodo: '',
-        todoItems: [
-            { id: 1, text: 'Переписать тест по Javascript', isChecked: false },
-            { id: 2, text: 'Повторить Git', isChecked: false },
-            { id: 3, text: 'Доделать проект по JS', isChecked: false },
-            { id: 4, text: 'Выучить Vue.js', isChecked: false },
-            { id: 5, text: 'Повторить HTML&CSS', isChecked: false }
-        ]
+        todoItems: []
       }
     },
     computed: {
@@ -80,15 +76,24 @@ export default {
     },
     created() {
         this.hidePreloader();
+
+        let todoItems = JSON.parse(localStorage.getItem('todoItems'));
+        if(todoItems) {
+            this.todoItems = todoItems;
+        }
     },
     watch: {
-        doneTodos(newValue) {
-            if (!this.todoItems.length) {
+        doneTodos(current, initial) {
+            const totalLength = this.todoItems.length;
+            if (!totalLength) {
                 M.toast({ html: 'Список дел пуст!' });
             }
-            else if (newValue.length === this.todoItems.length) {
+            else if (current.length > initial.length && current.length === totalLength) {
                 M.toast({ html: 'Все дела выполнены!' });
             }
+        },
+        todoItems(current) {
+            localStorage.setItem('todoItems', JSON.stringify(current));
         }
     },
     mounted() {
@@ -110,7 +115,7 @@ export default {
             if (!this.newTodo.length) return;
 
             this.todoItems.push({
-                id        : this.todoItems.length + 1,
+                id        : new Date().getTime(),
                 text      : this.newTodo,
                 isChecked : false
             });

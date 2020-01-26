@@ -21,3 +21,10 @@
 .card .card-image img {
     border-radius: 50%;
 }
+
+.loader {
+    display: flex;
+    justify-content: center;
+    display: none;
+    width: 100%;
+}

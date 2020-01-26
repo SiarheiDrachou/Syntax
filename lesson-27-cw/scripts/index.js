@@ -87,9 +87,13 @@
 
 async function readRepositories() {
     try {
+        loader();
         let response = await fetch("https://api.github.com/users/SiarheiDrachou/repos");
         let repositories = await response.json();
+        console.log(repositories);
+        setTimeout(() => {
         buildCards(repositories);
+    }, 2000);
     } 
     catch (error) {
         alert('error');
@@ -99,61 +103,20 @@ async function readRepositories() {
             loaderEl.remove();
         }, 2000);
     }
-        
-    
 }
+
 let loaderEl = document.querySelector(".loader");
+
 function loader() {
-    loaderEl.insertAdjacentHTML("beforeend", `<div class="preloader-wrapper big active">
-                                                <div class="spinner-layer spinner-blue">
-                                                <div class="circle-clipper left">
-                                                    <div class="circle"></div>
-                                                </div><div class="gap-patch">
-                                                    <div class="circle"></div>
-                                                </div><div class="circle-clipper right">
-                                                    <div class="circle"></div>
-                                                </div>
-                                                </div>
-
-                                                <div class="spinner-layer spinner-red">
-                                                <div class="circle-clipper left">
-                                                    <div class="circle"></div>
-                                                </div><div class="gap-patch">
-                                                    <div class="circle"></div>
-                                                </div><div class="circle-clipper right">
-                                                    <div class="circle"></div>
-                                                </div>
-                                                </div>
-
-                                                <div class="spinner-layer spinner-yellow">
-                                                <div class="circle-clipper left">
-                                                    <div class="circle"></div>
-                                                </div><div class="gap-patch">
-                                                    <div class="circle"></div>
-                                                </div><div class="circle-clipper right">
-                                                    <div class="circle"></div>
-                                                </div>
-                                                </div>
-
-                                                <div class="spinner-layer spinner-green">
-                                                <div class="circle-clipper left">
-                                                    <div class="circle"></div>
-                                                </div><div class="gap-patch">
-                                                    <div class="circle"></div>
-                                                </div><div class="circle-clipper right">
-                                                    <div class="circle"></div>
-                                                </div>
-                                                </div>
-                                            </div>
-                                                ` );
+    loaderEl.style.display = 'flex';
 
 }
-
 function buildCards(repositories) {
 let gridEl = document.querySelector(".grid");
-loader();
-setTimeout(() => {
+
+
     repositories.forEach(repository => {
+        console.log(repository);
         let card = `<div class="card hoverable">
                         <div class="card-image">
                             <img src="${ repository.owner.avatar_url }">
@@ -166,8 +129,7 @@ setTimeout(() => {
 
         gridEl.insertAdjacentHTML('beforeend', card);
     });
-}, 2000);
-}
 
+}
 readRepositories();
 

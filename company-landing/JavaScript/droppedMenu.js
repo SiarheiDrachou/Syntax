@@ -9,11 +9,13 @@ headerLinksEl.addEventListener('click', function (event) {
 });
 
 menuIcon.addEventListener('click', function(event) {
+    headerMenuEl.style.right = 0;
     headerMenuEl.classList.add('header__list-menu--active');
     closeIconEl.style.display = "flex";    
 });
 
 closeIconEl.addEventListener('click', function(event) {
+    headerMenuEl.style.right = -300 + 'px';
     headerMenuEl.classList.remove('header__list-menu--active');
     closeIconEl.style.display = "none";
 });
